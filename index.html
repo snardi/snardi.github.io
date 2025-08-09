@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snardi@computer</title>
+    <!-- Link to the JetBrains Mono font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <style>
+        /*
+         * Basic styling for the entire page with a solarized dark color scheme.
+         */
+        body {
+            background-color: #002b36; /* Solarized dark background */
+            color: #839496; /* Solarized base text color */
+            font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
+            line-height: 1.5;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /*
+         * The main content container, designed to look like a terminal window.
+         */
+        .terminal-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            border: 2px solid #859900; /* Solarized green border */
+            box-shadow: 0 0 10px #859900; /* Solarized green glow */
+            background-color: rgba(0, 43, 54, 0.8); /* Slightly transparent solarized dark background */
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        /*
+         * Styles for the navigation menu.
+         */
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border-bottom: 1px solid #859900; /* Solarized green separator */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /*
+         * Styles for the "command line prompt."
+         */
+        .prompt::after {
+            content: '_';
+            animation: blink 1s step-end infinite;
+        }
+
+        /*
+         * Blinking cursor animation.
+         */
+        @keyframes blink {
+            from, to {
+                color: transparent;
+            }
+            50% {
+                color: #859900; /* Solarized green cursor */
+            }
+        }
+
+        /*
+         * Styles for headers, making them stand out slightly.
+         */
+        h1, h2 {
+            margin: 0.5rem 0;
+            font-weight: normal;
+        }
+
+        /*
+         * General paragraph and list styling.
+         */
+        p, ul, li {
+            margin: 0.5rem 0;
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+        
+        /*
+         * Styling for links to make them feel like part of the terminal output.
+         */
+        a {
+            color: #859900; /* Solarized green link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /*
+         * Hover effect for links.
+         */
+        a:hover {
+            color: #859900;
+            text-decoration: underline;
+        }
+
+        /*
+         * Separator line to break up sections.
+         */
+        hr {
+            border: 1px solid #859900; /* Solarized green separator */
+            margin: 2rem 0;
+        }
+
+        /*
+         * Responsive adjustments for smaller screens.
+         */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            .nav-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-menu li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal-container">
+        <!-- Navigation Menu -->
+        <ul class="nav-menu">
+            <li><a href="#about">whoami</a></li>
+            <li><a href="#projects">ls projects</a></li>
+            <li><a href="#contact">contact.sh</a></li>
+        </ul>
+
+        <!-- About Me section with a unique ID for the link -->
+        <h1 class="prompt" id="about">snardi@computer:~$ whoami</h1>
+        <p>Hello! My name is John Doe, and this is my personal page. I am a software developer with a passion for retro technology and clean code. I built this page to experiment with minimal, text-based design.</p>
+        <hr>
+        
+
+        <!-- Professional Summary section -->
+        <h1 class="prompt">snardi@computer:~$ cat professional_summary.txt</h1>
+        <script>
+        // Fetch the content from the text file
+        fetch('professional_summary.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the content into the paragraph element
+                document.getElementById('external-text').innerHTML = data;
+            });
+        </script>
+
+        <p id="external-text"></p>
+
+
+        <hr>
+
+        <!-- Projects section with a unique ID for the link -->
+        <h1 class="prompt" id="projects">snardi@computer:~$ ls projects</h1>
+        <ul>
+            <li><a href="#">my-first-project</a> - A small command-line tool I built to manage my files.</li>
+            <li><a href="#">retro-terminal-game</a> - A text-based adventure game written in Python.</li>
+            <li><a href="#">open-source-contribution</a> - A library I contributed to that helps with data parsing.</li>
+        </ul>
+        <hr>
+
+        <!-- Contact section with a unique ID for the link -->
+        <h1 class="prompt" id="contact">snardi@computer:~$ contact.sh</h1>
+        <ul>
+            <li><b>Sergio Nardi Spinelli</b></li>
+            <li><b>Senior Delivery Consultant</b></li>
+            <li>Site: <a href="https://snardi.github.io/" target="_blank">snardi.github.io</a></li>
+            <li>Email: <a href="mailto:sergio.nardi@gmail.com">sergio.nardi@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/nardix/" target="_blank">linkedin.com/in/nardix</a></li>
+            <li>Location: <b>Vienna, Austria.</b></li>
+
+        </ul>
+    </div>
+
+</body>
+</html>
