@@ -147,9 +147,17 @@
 
         <!-- About Me section with a unique ID for the link -->
         <h1 class="prompt" id="about">snardi@computer:~$ whoami</h1>
-        <p>Hello! My name is John Doe, and this is my personal page. I am a software developer with a passion for retro technology and clean code. I built this page to experiment with minimal, text-based design.</p>
+        <script>
+        // Fetch the content from the text file
+        fetch('whoami.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the content into the paragraph element
+                document.getElementById('whoami-text').innerHTML = data;
+            });
+        </script>
+        <p id="whoami-text"></p>
         <hr>
-        
 
         <!-- Professional Summary section -->
         <h1 class="prompt">snardi@computer:~$ cat professional_summary.txt</h1>
