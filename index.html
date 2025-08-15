@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snardi@computer</title>
-    <!-- Link to the JetBrains Mono font from Google Fonts -->
+    <!-- Link to the Inter font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
     <style>
         /*
          * Basic styling for the entire page with a solarized light color scheme.
@@ -15,7 +17,7 @@
         body {
             background-color: #fdf6e3; /* Solarized light background */
             color: #657b83; /* Solarized base text color */
-            font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 2rem;
             display: flex;
@@ -172,8 +174,20 @@
         </script>
 
         <p id="external-text"></p>
+        <hr>
 
-
+        <!-- Professional Experience section -->
+        <h1 class="prompt">snardi@computer:~$ cat professional_experience.txt</h1>
+        <script>
+        // Fetch the content from the text file
+        fetch('experience_nursa.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the content into the paragraph element
+                document.getElementById('experience-nursa').innerHTML = data;
+            });
+        </script>
+        <p id="experience-nursa"></p>
         <hr>
 
         <!-- Projects section with a unique ID for the link -->
