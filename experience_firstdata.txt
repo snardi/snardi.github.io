@@ -1,0 +1,26 @@
+<!-- Experience Summary -->
+<p class="italic text-gray-800 mb-4">
+Elevated software development standards and architectural quality for Point-of-Sale (POS) terminal applications in the payments industry.
+</p> 
+
+<!-- List of Responsibilities and Accomplishments -->
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li>
+    Championed and executed a modernization of development practices, which included driving the adoption of a new software configuration management (SCM) tool and process across the team.
+    </li>
+    <li>
+    Architected and implemented a major code refactoring initiative that significantly improved long-term code maintainability by minimizing coupling between modules.
+    </li>
+    <li>
+    Designed and developed a wrapper-facade library to abstract platform-specific APIs, simplifying development and enhancing the portability of the codebase across different POS hardware.
+    </li>
+    <li>
+    Implemented an automated validation system for ISO-8583 financial messages, which increased data integrity and reduced transaction processing errors.
+    </li>
+</ul>
+<br>
+<!-- Technologies and Tools Section -->
+<p class="text-sm text-gray-800">
+    <span class="font-semibold">Technologies/Tools:</span> 
+    C, Verifone NURIT, Lipman Nurit, ISO8583, TCP/IP, GSM, GPRS, UML, Tandem.
+</p>

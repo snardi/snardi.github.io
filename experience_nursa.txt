@@ -1,0 +1,26 @@
+<!-- Experience Summary -->
+<p class="italic text-gray-800 mb-4">
+Defined and executed the product strategy and solution definition for the clinician credentialing domain, a core component for ensuring marketplace integrity and accelerating the supply of qualified nurses.
+</p>
+
+<!-- List of Responsibilities and Accomplishments -->
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li>
+    Led product discovery with Compliance, Market Integrity, and Engineering stakeholders to launch an automated system for healthcare license verification, largely eliminating the manual verification workload and increasing data accuracy.
+    </li>
+    <li>
+    Authored and managed a prioritized backlog of high quality user stories and functional specifications, which directly contributed to improving the development team's velocity, predictability and quality of QA testing.
+    </li>
+    <li>
+    Identified critical bottlenecks in the clinician onboarding funnel by conducting in-depth data analysis with SQL and Segment, leading to targeted product improvements.
+    </li>
+    <li>
+    Owned and maintained the domain's functional specifications, serving as the central point of knowledge and ensuring alignment between business requirements and technical implementation.
+    </li>
+</ul>
+<br>
+<!-- Technologies and Tools Section -->
+<p class="text-sm text-gray-800">
+    <span class="font-semibold">Technologies/Tools:</span> 
+    Microservices, GCP, Segment, Split (Harness), SQL, Jira, Figma, Miro, Lucidchart.
+</p>

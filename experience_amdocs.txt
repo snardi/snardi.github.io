@@ -1,0 +1,32 @@
+<!-- Experience Summary -->
+<p class="italic text-gray-800 mb-4">
+Acted as a key leader in the Solution Delivery team, steering complex, multi-year BSS transformation programs for Tier 1 telecommunication clients.
+</p> 
+
+<!-- List of Responsibilities and Accomplishments -->
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li>
+    Played a pivotal role in the leadership team that successfully delivered a full-stack BSS transformation program for Telefonica Argentina.
+    </li>
+    <li>
+    Directed the end-to-end system parameterization for the Telefonica program, aligning multiple internal and external stakeholders and providing regular status reports to director-level leadership.
+    </li>
+    <li>
+    Served as the Solution Lead for the CRM and Product Catalog domains, translating complex business needs into technical solutions and ensuring alignment between Amdocs’ technical teams and the customer.
+    </li>
+    <li>
+    Owned the solution lifecycle for new functionalities, from leading initial scoping sessions to creating and managing the approval process for all design documents and UAT criteria.
+    </li>
+    <li>
+    Led product catalog scoping sessions for the ThreeUK full-stack transformation program.
+    </li>
+    <li>
+    Leveraged deep product expertise to conduct solution demonstrations and training sessions for other key Amdocs customers.
+    </li>
+</ul>
+<br>
+<!-- Technologies and Tools Section -->
+<p class="text-sm text-gray-800">
+    <span class="font-semibold">Technologies/Tools:</span> 
+        Linux, Oracle Service Bus, Oracle DB, SOAP, REST.
+</p>

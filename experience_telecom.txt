@@ -1,0 +1,23 @@
+<!-- Experience Summary -->
+<p class="italic text-gray-800 mb-4">
+Progressed through roles of increasing responsibility, from Technical Analyst to Senior Software Engineer and finally Business Analyst, playing a key role in the modernization and transformation of core BSS systems.
+</p> 
+
+<!-- List of Responsibilities and Accomplishments -->
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li>
+    Led a major initiative to re-architect and modernize the core BSS mediation system, successfully migrating it from a legacy client-server model to a high-availability, three-tier web architecture.
+    </li>
+    <li>
+    Owned the full development lifecycle for the mediation system in a DevOps-like model and acted as Release Manager, defining the software configuration management (SCM) process and building tools to automate deployments.
+    </li>
+    <li>
+    As a key contributor to a company-wide BSS transformation, drove the implementation of a new billing system and later transitioned to a Business Analyst role to gather requirements for the new Oracle BRM platform.
+    </li>
+</ul>
+<br>
+<!-- Technologies and Tools Section -->
+<p class="text-sm text-gray-800">
+    <span class="font-semibold">Technologies/Tools:</span> 
+    C/C++, Java, Oracle DB, Pro*C, HP-UX, Linux RHEL, IBM MVS, JCL, COBOL, REXX, DB2, Bugzilla, Twiki.
+</p>

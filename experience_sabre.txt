@@ -1,0 +1,23 @@
+<!-- Experience Summary -->
+<p class="italic text-gray-800 mb-4">
+Designed and developed high-availability middleware solutions for the core Global Distribution System (GDS) in the travel industry.
+</p> 
+
+<!-- List of Responsibilities and Accomplishments -->
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li>
+    Engineered and led the successful technical migration of a business-critical middleware proxy from Solaris to RHE Linux; this effort included building a new process monitor which resulted in increasing system availability to 99.99%.
+    </li>
+    <li>
+    Architected and built a distributed testing tool from the ground up, which fully automated regression and integration tests and slashed the testing cycle from one week to just 12 hours.
+    </li>
+    <li>
+    Owned the end-to-end delivery of new enterprise services for credit card tokenization, managing the entire lifecycle from initial implementation and certification through to final production deployment.
+    </li>
+</ul>
+<br>
+<!-- Technologies and Tools Section -->
+<p class="text-sm text-gray-800">
+    <span class="font-semibold">Technologies/Tools:</span> 
+    Sun Solaris 5.8, RHE Linux 5, Java, C, Valgrind, Bash, Perl, Apache CXF, Apache Camel, TCP, HSSP (application level), SOAP, IBM TPF, Totalview debugger, gdb, Tomcat, Maven.
+</p>

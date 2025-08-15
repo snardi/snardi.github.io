@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Professional Experience</title>
+
+
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+    </style>
+
+
+
+
+</head>
+<body class="bg-gray-100 p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-6 sm:p-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            Who Am I
+        </h2>
+        <script>
+        // Fetch the content from the text file
+        fetch('whoami.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the content into the paragraph element
+                document.getElementById('whoami-text').innerHTML = data;
+            });
+        </script>
+        <p id="whoami-text"></p>
+
+        <hr>
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            Professional Summary
+        </h2>
+        <script>
+        // Fetch the content from the text file
+        fetch('professional_summary.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the content into the paragraph element
+                document.getElementById('professional-summary-text').innerHTML = data;
+            });
+        </script>
+        <p id="professional-summary-text"></p>
+
+        <hr>
+
+
+
+        <!-- Main Header -->
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            Professional Experience
+        </h2>
+
+        <!-- Job Entry Start: Nursa -->
+        <div class="job-entry">
+            <!-- Header: Title, Company, and Dates -->
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                Product Owner / Senior Business & Technical Analyst
+            </h3>
+            <p class="text-md sm:text-lg font-medium text-gray-600 mb-4">
+                Nursa (Healthcare Tech Startup) | U.S. | June 2022 – November 2023
+            </p>
+            <!-- List of Responsibilities and Accomplishments -->
+            <script>
+            // Fetch the content from the text file
+            fetch('experience_nursa.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('experience-nursa-text').innerHTML = data;
+                });
+            </script>
+            <p id="experience-nursa-text"></p>
+        </div>
+        <!-- Job Entry End: Nursa -->
+        <br><hr><br>
+        <!-- Job Entry Start: Netcracker -->
+        <div class="job-entry">
+            <!-- Header: Title, Company, and Dates -->
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                Senior Business Analyst (Product Catalog & CPQ)
+            </h3>
+            <p class="text-md sm:text-lg font-medium text-gray-600 mb-4">
+                Netcracker | LATAM & North America March 2021 – May 2022
+            </p>
+            <!-- List of Responsibilities and Accomplishments -->
+            <script>
+            // Fetch the content from the text file
+            fetch('experience_netcracker.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('experience-netcracker-text').innerHTML = data;
+                });
+            </script>
+            <p id="experience-netcracker-text"></p>
+        </div>
+        <!-- Job Entry End: Netcracker -->
+        <br><hr><br>
+        <!-- Job Entry Start: Amdocs -->
+        <div class="job-entry">
+            <!-- Header: Title, Company, and Dates -->
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                Senior Delivery Consultant / Senior Business Analyst
+            </h3>
+            <p class="text-md sm:text-lg font-medium text-gray-600 mb-4">
+                Amdocs | LATAM & North America September 2015 – February 2021
+            </p>
+            <!-- List of Responsibilities and Accomplishments -->
+            <script>
+            // Fetch the content from the text file
+            fetch('experience_amdocs.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('experience-amdocs-text').innerHTML = data;
+                });
+            </script>
+            <p id="experience-amdocs-text"></p>
+        </div>
+        <!-- Job Entry End: Amdocs -->
+        <br><hr><br>
+        <!-- Job Entry Start: Orga Systems -->
+        <div class="job-entry">
+            <!-- Header: Title, Company, and Dates -->
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                Senior Delivery Consultant & Integration Lead (BSS Rating)
+            </h3>
+            <p class="text-md sm:text-lg font-medium text-gray-600 mb-4">
+                Orga Systems | LATAM & Europe September 2011 – August 2015
+            </p>
+            <!-- List of Responsibilities and Accomplishments -->
+            <script>
+            // Fetch the content from the text file
+            fetch('experience_orga.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('experience-orga-text').innerHTML = data;
+                });
+            </script>
+            <p id="experience-orga-text"></p>
+        </div>
+        <!-- Job Entry End: Orga Systems -->
+        <br><hr><br>
+        <!-- Job Entry Start: Sabre Holdings -->
+        <div class="job-entry">
+            <!-- Header: Title, Company, and Dates -->
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                Senior Software Engineer (GDS Middleware)
+            </h3>
+            <p class="text-md sm:text-lg font-medium text-gray-600 mb-4">
+                Sabre Holdings | U.S. March 2008 – August 2011
+            </p>
+            <!-- List of Responsibilities and Accomplishments -->
+            <script>
+            // Fetch the content from the text file
+            fetch('experience_sabre.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('experience-sabre-text').innerHTML = data;
+                });
+            </script>
+            <p id="experience-sabre-text"></p>
+        </div>
+        <!-- Job Entry End: Sabre Holdings -->
+        <br><hr><br>
+        <!-- Job Entry Start: First Data -->
+        <div class="job-entry">
+            <!-- Header: Title, Company, and Dates -->
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+                Technical Lead (POS Development)
+            </h3>
+            <p class="text-md sm:text-lg font-medium text-gray-600 mb-4">
+                First Data | Argentina September 2006 – March 2008
+            </p>
+            <!-- List of Responsibilities and Accomplishments -->
+            <script>
+            // Fetch the content from the text file
+            fetch('experience_firstdata.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('experience-firstdata-text').innerHTML = data;
+                });
+            </script>
+            <p id="experience-firstdata-text"></p>
+        </div>
+        <!-- Job Entry End: First Data -->
+        <br><hr><br>
+        <!-- Job Entry Start: Telecom Argentina -->
+        <div class="job-entry">
+            <!-- Header: Title, Company, and Dates -->
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800">
+            Senior Software Engineer & Business Analyst, BSS Systems
+            </h3>
+            <p class="text-md sm:text-lg font-medium text-gray-600 mb-4">
+                Telecom Argentina | Argentina August 1998 – September 2006
+            </p>
+            <!-- List of Responsibilities and Accomplishments -->
+            <script>
+            // Fetch the content from the text file
+            fetch('experience_telecom.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('experience-telecom-text').innerHTML = data;
+                });
+            </script>
+            <p id="experience-telecom-text"></p>
+        </div>
+        <!-- Job Entry End: First Data -->
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>

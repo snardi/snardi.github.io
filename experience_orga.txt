@@ -1,0 +1,26 @@
+<!-- Experience Summary -->
+<p class="italic text-gray-800 mb-4">
+Delivered complex BSS Rating solutions for multiple Tier 1 telecommunication clients across Latin America, including Telecom Personal (AR), Entel (CL), Digitel (VE), and TIM (BR).
+</p> 
+
+<!-- List of Responsibilities and Accomplishments -->
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li>
+    Owned the complete lifecycle of solution documents for key clients, from requirements gathering and analysis to final design, ensuring full customer approval and sign-off on all project milestones.
+    </li>
+    <li>
+    Led the end-to-end solution integration between the core BSS Rating platform and client CRM systems, utilizing a Service-Oriented Architecture (SOA) and a BPM platform for web services orchestration.
+    </li>
+    <li>
+    Spearheaded the migration of a legacy rating system to the new platform, managing the migration strategy and its implementation.
+    </li>
+    <li>
+    Served as the primary technical and functional point of contact for clients, bridging the gap between their business needs and the system's capabilities.
+    </li>
+</ul>
+<br>
+<!-- Technologies and Tools Section -->
+<p class="text-sm text-gray-800">
+    <span class="font-semibold">Technologies/Tools:</span> 
+    HP-UX 11, Sun Solaris, RHE Linux, C, Tcl, Java, Bash, JavaSE, Open Text Cordys BOP, gdb, make, valgrind, Tomcat, XML Schema, SOAP UI, Eclipse.
+</p>

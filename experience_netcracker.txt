@@ -1,0 +1,28 @@
+<!-- Experience Summary -->
+<p class="italic text-gray-800 mb-4">
+Delivered complex BSS solutions for major telecommunication clients in LATAM and North America, specializing in Product Catalog and CPQ modules.
+</p> 
+
+<!-- List of Responsibilities and Accomplishments -->
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li>
+    Led Agile grooming and refinement sessions for the VIVO Brazil account, successfully delivering key customizations to their B2C Product Offering Catalog, enabling the client to introduce new bundled offers to the market faster. 
+    </li>
+    <li>
+    Designed the data mapping rules for the complex migration of the Telus Product Offering Catalog, ensuring a seamless transition of their product offerings from a legacy system to the new platform. 
+    </li>
+    <li>
+    Engineered and implemented critical business rules for the Configure, Price, Quote (CPQ) module, which automated complex quotation flows.
+    </li>
+    <li>
+    Authored and managed all key deliverables (e.g., design documents, mapping rules, UAT criteria) through the entire project lifecycle, ensuring stakeholder alignment and securing timely approvals from clients.
+    </li>
+
+</ul>
+<br>
+
+<!-- Technologies and Tools Section -->
+<p class="text-sm text-gray-800">
+    <span class="font-semibold">Technologies/Tools:</span> 
+        Microservices, Unix, Docker, Cloud.
+</p>
