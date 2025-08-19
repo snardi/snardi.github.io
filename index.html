@@ -5,26 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Professional Experience</title>
 
-
-
     <style>
+        :root {
+            --base03:  #002b36;
+            --base02:  #073642;
+            --base01:  #586e75;
+            --base00:  #657b83;
+            --base0:   #839496;
+            --base1:   #93a1a1;
+            --base2:   #eee8d5;
+            --base3:   #fdf6e3;
+            --yellow:  #b58900;
+            --orange:  #cb4b16;
+            --red:     #dc322f;
+            --magenta: #d33682;
+            --violet:  #6c71c4;
+            --blue:    #268bd2;
+            --cyan:    #2aa198;
+            --green:   #859900;
+        }
         body {
             font-family: 'Inter', sans-serif;
+            background-color: var(--base3);
+            color: var(--base00);
+        }
+        /* Style for links, if any are loaded from the text files */
+        a {
+            color: var(--blue);
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
 
+        h2, nav a {
+            font-family: 'VT323', monospace;
+        }
+
+        /*
+         * Styles for the "command line prompt."
+         */
+        .prompt::after {
+            content: '_';
+            animation: blink 1s step-end infinite;
+        }
+
+        /*
+         * Blinking cursor animation.
+         */
+        @keyframes blink {
+            from, to {
+                color: transparent;
+            }
+            50% {
+                color: #002b36; /* Black cursor */
+            }
+        }
+
+
+        h2[id] {
+            scroll-margin-top: 2rem;
+        }
     </style>
-
-
-
-
 </head>
-<body class="bg-gray-100 p-4 sm:p-6 md:p-8">
 
-    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-6 sm:p-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-            Who Am I
+
+
+<body class="p-4 sm:p-6 md:p-8">
+    <div class="max-w-4xl mx-auto bg-[var(--base2)] rounded-xl shadow-lg shadow-[var(--blue)]/20 border border-[var(--blue)] p-6 sm:p-8">
+        <nav class="border-b border-[var(--blue)] pb-4 mb-8">
+            <ul class="flex flex-wrap justify-center sm:justify-start sm:space-x-8 list-none p-0 m-0 text-xl sm:text-2xl text-[var(--base03)]">
+                <li><a href="#whoami">Who Am I</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <h2 id="whoami" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
+            snardi@computer:~$ Who Am I
         </h2>
         <script>
         // Fetch the content from the text file
@@ -37,9 +98,11 @@
         </script>
         <p id="whoami-text"></p>
 
-        <hr>
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-            Professional Summary
+        <hr class="my-8 border-t border-[var(--blue)]">
+
+        <!-- Professional Summary  -->
+        <h2 id="summary" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
+            snardi@computer:~$ Professional Summary
         </h2>
         <script>
         // Fetch the content from the text file
@@ -51,14 +114,13 @@
             });
         </script>
         <p id="professional-summary-text"></p>
+        <!-- Professional Summary End  -->
 
-        <hr>
-
-
+        <hr class="my-8 border-t border-[var(--blue)]">
 
         <!-- Main Header -->
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-            Professional Experience
+        <h2 id="experience" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
+            snardi@computer:~$ Professional Experience
         </h2>
 
         <!-- Job Entry Start: Nursa -->

@@ -1,4 +1,5 @@
-Welcome to my personal site, my name is Sergio Nardi Spinelli.<br>
-Here you will find my professional profile and experience, along with some miscellaneous articles related to the profession of building and delivering software products and solutions.<br>
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+Welcome to my personal site, my name is Sergio Nardi Spinelli.<br><br>
+Here you will find my professional profile and experience, along with some miscellaneous articles related to the profession of building and delivering software products and solutions.<br><br>
 On a personal note, I’m currently based in Vienna, Austria. When I'm not focused on professional projects, I have a passion for sailing, hiking, and spending time in nature with my wife, Ana. At home, we share our space with two cats, Trim and Miau, who generously allow us to live there, as long as the jazz is good.<br>
-
+</ul>
