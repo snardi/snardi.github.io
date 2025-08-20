@@ -1,0 +1,8 @@
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li><b>Sergio Nardi Spinelli</b></li>
+    <li><b>Senior Delivery Consultant</b></li>
+    <li>Site: <a href="https://snardi.github.io/" target="_blank">snardi.github.io</a></li>
+    <li>Email: <a href="mailto:sergio.nardi@gmail.com">sergio.nardi@gmail.com</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/nardix/" target="_blank">linkedin.com/in/nardix</a></li>
+    <li>Location: <b>Vienna, Austria.</b></li>
+</ul>
