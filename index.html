@@ -98,14 +98,15 @@
 
 
 <body class="p-4 sm:p-6 md:p-8">
-    <div class="max-w-4xl mx-auto bg-[var(--base2)] rounded-xl shadow-lg shadow-[var(--blue)]/20 border border-[var(--blue)] p-6 sm:p-8">
+    <div class="max-w-6xl mx-auto bg-[var(--base2)] rounded-xl shadow-lg shadow-[var(--blue)]/20 border border-[var(--blue)] p-6 sm:p-8">
         <nav class="border-b border-[var(--blue)] pb-4 mb-8">
-            <ul class="flex flex-wrap justify-center sm:justify-start sm:space-x-8 list-none p-0 m-0 text-xl sm:text-2xl text-[var(--base03)]">
+            <ul class="flex flex-col items-center space-y-4 sm:flex-row sm:justify-start sm:space-y-0 sm:space-x-8 list-none p-0 m-0 text-xl sm:text-2xl text-[var(--base03)]">
                 <li><a href="#whoami">/Who Am I</a></li>
                 <li><a href="#summary">/Professional Summary</a></li>
                 <li><a href="#experience">/Experience</a></li>
                 <li><a href="#skills">/Skills</a></li>
                 <li><a href="#etc">/etc</a></li>
+                <li><a href="#readingList">/My Reading List</a></li>
                 <li><a href="#contact">/Contact</a></li>
             </ul>
         </nav>
@@ -328,6 +329,24 @@
         </script>
         <p id="etc-index-text"></p>
         <!-- Etc End -->
+
+        <hr class="my-8 border-t border-[var(--blue)]">
+
+        <!-- My Reading List -->
+        <h2 id="readingList" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
+            snardi@computer:~$ My Reading List
+        </h2>
+        <script>
+        // Fetch the content from the text file
+        fetch('reading_list.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Insert the content into the paragraph element
+                document.getElementById('reading-list-text').innerHTML = data;
+            });
+        </script>
+        <p id="reading-list-text"></p>
+        <!-- My Reading List End -->
 
         <hr class="my-8 border-t border-[var(--blue)]">
 

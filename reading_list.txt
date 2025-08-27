@@ -1,0 +1,5 @@
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+    <li class="text-gray-800">
+        Patrick M. Lencioni (2002) <b><i>The Five Dysfunctions of a Team: A Leadership Fable</i></b>. Jossey-Bass.
+    </li>
+</ul> 

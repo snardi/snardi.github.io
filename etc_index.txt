@@ -1,0 +1,6 @@
+<ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+This section contains some miscellaneous thoughts on the profession of building and delivering software. It's a personal exercise to keep learning, identify the fundamentals, and meditate on the good and bad practices I've seen through many years of experience.<br><br>
+In the spirit of
+<a href="https://www.google.com/search?q=Harry+G.+Frankfurt%27s+essay+On+Bullshit" target="_blank">Harry G. Frankfurt's essay On Bullshit</a>
+, I will do my best to keep these reflections honest, substantive, and grounded in fact.
+</ul>
