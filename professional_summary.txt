@@ -1,5 +1,9 @@
 <ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
-    Accomplished Delivery Consultant and Senior Business Analyst with a strong foundation in software engineering and over 25 years of experience leading technology solutions.<br><br>
-    I specialize in the delivery of complex products and solutions, leveraging deep technical expertise in system architecture, middleware development, and process automation to bridge the gap between business goals and engineering execution.<br><br>
-    I recently spearheaded the design and launch of an automated system that eliminated manual healthcare license verifications, significantly improving data accuracy and operational efficiency.
+Accomplished <b>Senior Delivery Consultant and Senior Business Analyst</b> with a strong foundation in software engineering and over 25 years of experience leading enterprise and consumer solutions.<br><br>
+
+I have hands-on experience in end-to-end solution delivery and product building across diverse industries, including Telecommunications, Healthcare, Travel, and Payments.<br><br>
+
+I excel at delivering complex requirements by bridging the gap between business goals and engineering execution. I base this process on four core pillars: <b>close collaboration with stakeholders</b>, <b>meticulous attention to detail</b>, <b>service orientation</b>, and <b>professional integrity</b>.<br><br>
+
+I recently spearheaded the design and launch of an automated system that eliminated manual healthcare license verifications, significantly improving data accuracy and operational efficiency.
 </ul>
