@@ -2,4 +2,27 @@
     <li class="text-gray-800">
         Patrick M. Lencioni (2002) <b><i>The Five Dysfunctions of a Team: A Leadership Fable</i></b>. Jossey-Bass.
     </li>
+    <li class="text-gray-800">
+        Peter van der Linden (1994) <b><i>Expert C Programming: Deep C Secrets</i></b>.
+        Pearson
+    </li>
+    <li class="text-gray-800">
+        W. Richard Stevens, Stephen A. Rago (2005) <b><i>Advanced Programming in the UNIX® Environment: Second Edition</i></b>.
+        Addison-Wesley Professional
+    </li>
+    <li class="text-gray-800">
+        Alfred V. Aho, Brian W. Kernighan, and Peter J. Weinberger <b><i>The AWK Programming Language: Second Edition</i></b>.
+    </li>
+    <li class="text-gray-800">
+        Brian W. Kernighan, Dennis M. Ritchie (1988) <b><i>C Programming Language: Second Edition</i></b>.
+        Pearson.
+    </li>
+    <li class="text-gray-800">
+        Robert L. Glass (2002) <b><i>Facts and Fallacies of Software Engineering</i></b>.
+        Addison-Wesley.
+    </li>
+    <li class="text-gray-800">
+        Eric Gamma, Richard Helm, Ralph Johnson, and John Vlissides (1994) <b><i>Design Patterns: Elements of Reusable Object-Oriented Software</i></b>.
+        Addison-Wesley Professional.
+    </li>
 </ul> 
