@@ -1,6 +1,7 @@
 <ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
     <li class="text-gray-800">
         Patrick M. Lencioni (2002) <b><i>The Five Dysfunctions of a Team: A Leadership Fable</i></b>. Jossey-Bass.
+        [<a href="https://docs.google.com/document/d/1U85eKEUP5wIymegIrnknDcMcqeZ8l87BO3zyp4yuhKY/edit?usp=sharing" target="_blank">my notes</a>]
     </li>
     <li class="text-gray-800">
         Peter van der Linden (1994) <b><i>Expert C Programming: Deep C Secrets</i></b>.
