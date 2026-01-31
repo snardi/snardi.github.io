@@ -1,0 +1,239 @@
+<div class="columns-1 md:columns-2 gap-x-8 gap-y-4">
+    <div class="break-inside-avoid mb-6">
+        <h3 class="text-md sm:text-lg font-medium text-gray-600 mb-2">
+            Requirements Engineering
+        </h3>
+        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5">
+            <li class="text-gray-800">
+                <skill-widget skill="analyse business requirements" level="Expert"
+                        link="http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="define technical requirements" level="Advanced"
+                        link="http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="identify customer requirements" level="Expert"
+                        link="http://data.europa.eu/esco/skill/0e0c9c11-b39e-43cf-ba95-2fe646f5de64"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="identify legal requirements" level="Advanced"
+                        link="http://data.europa.eu/esco/skill/b9bf9e17-ae47-417b-bbb1-e8b7c263ccac"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="interact with users to gather requirements" level="Expert"
+                        link="http://data.europa.eu/esco/skill/a8797f21-1af0-4c5e-98ca-bf1442929363"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="identify ICT user needs" level="Expert"
+                        link="http://data.europa.eu/esco/skill/ddfe79e2-c2e3-4ba7-9bdf-3820b4f75b54"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="translate requirements into visual design" level="Expert"
+                        link=""></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="legal requirements of ICT products" level="Intermediate"
+                        link="http://data.europa.eu/esco/skill/a846cb9e-c152-41e7-bd34-45e7ff941e3b"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="analyse ICT system" level="Expert"
+                        link="http://data.europa.eu/esco/skill/7adb8473-bcc6-4ff8-9850-76d945d40092"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="analyse software specifications" level="Expert"
+                        link="http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998"></skill-widget>
+            </li>
+        </ul>
+    </div>
+
+    <div class="break-inside-avoid mb-6">
+        <h3 class="text-md sm:text-lg font-medium text-gray-600 mb-2">
+            Systems & Process Modeling
+        </h3>
+        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5">
+            <li class="text-gray-800">
+                <skill-widget skill="analyse business processes" level="Expert"
+                        link="http://data.europa.eu/esco/skill/56042303-972b-41be-9310-58467599ff7e"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="create business process models" level="Expert"
+                        link="http://data.europa.eu/esco/skill/6a7792a9-888a-46ad-afc9-2c0d94c8fde6"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="business process modelling" level="Expert"
+                        link="http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="design process" level="Expert"
+                        link="http://data.europa.eu/esco/skill/2c28fc20-8a60-4311-8899-5ef8729c05b3"></skill-widget>
+            </li>
+        </ul>
+    </div>
+
+    <div class="break-inside-avoid mb-6">
+        <h3 class="text-md sm:text-lg font-medium text-gray-600 mb-2">
+            Data Analysis & Visualization
+        </h3>
+        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5">
+            <li class="text-gray-800">
+                <skill-widget skill="visual presentation techniques" level="Expert"
+                        link="http://data.europa.eu/esco/skill/348b74cd-49ce-4844-8bdf-ec188b497213"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="information categorisation" level="Expert"
+                        link="http://data.europa.eu/esco/skill/93aaf65c-5aad-4e6f-a7ba-ce9bf7c0e6e6"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="information extraction" level="Expert"
+                        link="http://data.europa.eu/esco/skill/696e3b5b-8b61-45af-ae4c-3ab700f197ec"></skill-widget>
+            </li>
+        </ul>
+    </div>
+
+    <div class="break-inside-avoid mb-6">
+        <h3 class="text-md sm:text-lg font-medium text-gray-600 mb-2">
+            Software Solutions & Architecture
+        </h3>
+        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5">
+            <li class="text-gray-800">
+                <skill-widget skill="information architecture" level="Expert"
+                        link="http://data.europa.eu/esco/skill/1bba98a7-92b9-450b-9235-e0c905f8f3c4"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="ICT system integration" level="Expert"
+                        link="http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="hardware components" level="Expert"
+                        link="http://data.europa.eu/esco/skill/4b51e76e-9e8a-455f-a289-5b48246345c4"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="software components libraries" level="Expert"
+                        link="http://data.europa.eu/esco/skill/484df271-bb52-49f1-8f50-f19624bf4df2"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="cloud technologies" level="Expert"
+                        link="http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="digital systems" level="Expert"
+                        link="http://data.europa.eu/esco/skill/397da142-ab35-48fe-b154-7c38f447adfb"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="business ICT systems" level="Expert"
+                        link="http://data.europa.eu/esco/skill/ccdbd9bb-4faf-403c-a968-e8bf487f8a53"></skill-widget>
+            </li>
+        </ul>
+    </div>
+
+    <div class="break-inside-avoid mb-6">
+        <h3 class="text-md sm:text-lg font-medium text-gray-600 mb-2">
+            ICT Consultancy
+        </h3>
+        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5">
+            <li class="text-gray-800">
+                <skill-widget skill="provide user documentation" level="Expert"
+                        link="http://data.europa.eu/esco/skill/385479b7-5da5-4367-9763-0d15b41bb65b"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="solve ICT system problems" level="Expert"
+                        link="http://data.europa.eu/esco/skill/9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="monitor system performance" level="Expert"
+                        link="http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="provide ICT consulting advice" level="Expert"
+                        link="http://data.europa.eu/esco/skill/283cbcd3-7101-4dbb-be37-56f3625515b1"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="manage standard enterprise resource planning system" level="Expert"
+                        link="http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="optimise choice of ICT solution" level="Expert"
+                        link="http://data.europa.eu/esco/skill/3cfa46e9-b7da-44ac-b09e-9596dffe0425"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="keep up with the latest information systems solutions" level="Expert"
+                        link="http://data.europa.eu/esco/skill/20c920d4-7ff7-4676-ba61-3f04490d9416"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="manage changes in ICT system" level="Expert"
+                        link="http://data.europa.eu/esco/skill/1e7ed56a-6d6b-422f-962e-38543d150755"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="maintain relationship with customers" level="Expert"
+                        link="http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="copyright legislation" level="Expert"
+                        link="http://data.europa.eu/esco/skill/e2103a1d-4a84-47a9-b4f7-774787573449"></skill-widget>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="break-inside-avoid mb-6">
+        <h3 class="text-md sm:text-lg font-medium text-gray-600 mb-2">
+            Methodologies & Project Management
+        </h3>
+        <ul class="list-disc list-outside space-y-1 text-gray-700 pl-5">
+            <li class="text-gray-800">
+                <skill-widget skill="systems development life-cycle" level="Expert"
+                        link="http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="manage ICT project" level="Expert"
+                        link="http://data.europa.eu/esco/skill/3c76296d-4bbd-44ba-8eaa-95bf275f79b7"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="ICT project management methodologies" level="Expert"
+                        link="http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="apply change management" level="Expert"
+                        link="http://data.europa.eu/esco/skill/3c03ee71-4a23-448f-b79e-81fd75d27dca"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="Agile project management" level="Expert"
+                        link="http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="Process-based management" level="Expert"
+                        link="http://data.europa.eu/esco/skill/d5a59ca8-2e91-472e-8571-d12ce4478679"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="lean project management" level="Expert"
+                        link="http://data.europa.eu/esco/skill/da6393d5-a53c-4863-abc7-51f36281d74e"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="create project specifications" level="Expert"
+                        link="http://data.europa.eu/esco/skill/21fecc8a-392e-49ce-ac26-fb0696ccfead"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="keep task records" level="Expert"
+                        link="http://data.europa.eu/esco/skill/43b13058-68d0-40c6-8031-caf5a7b7d20c"></skill-widget>
+            </li>
+            <li class="text-gray-800">
+                <skill-widget skill="manage ICT change request process" level="Expert"
+                        link="http://data.europa.eu/esco/skill/0a099c81-6a0c-4f00-bb3b-990d23ec03a5"></skill-widget>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
