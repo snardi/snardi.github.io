@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +11,30 @@
 
     <style>
         :root {
-            --base03:  #002b36;
-            --base02:  #073642;
-            --base01:  #586e75;
-            --base00:  #657b83;
-            --base0:   #839496;
-            --base1:   #93a1a1;
-            --base2:   #eee8d5;
-            --base3:   #fdf6e3;
-            --yellow:  #b58900;
-            --orange:  #cb4b16;
-            --red:     #dc322f;
+            --base03: #002b36;
+            --base02: #073642;
+            --base01: #586e75;
+            --base00: #657b83;
+            --base0: #839496;
+            --base1: #93a1a1;
+            --base2: #eee8d5;
+            --base3: #fdf6e3;
+            --yellow: #b58900;
+            --orange: #cb4b16;
+            --red: #dc322f;
             --magenta: #d33682;
-            --violet:  #6c71c4;
-            --blue:    #268bd2;
-            --cyan:    #2aa198;
-            --green:   #859900;
+            --violet: #6c71c4;
+            --blue: #268bd2;
+            --cyan: #2aa198;
+            --green: #859900;
         }
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--base3);
             color: var(--base00);
         }
+
         /* Style for links, if any are loaded from the text files */
         /*
         a {
@@ -44,27 +47,28 @@
 
         a {
             text-decoration: none;
-                text-decoration-line: none;
-                text-decoration-thickness: initial;
-                text-decoration-style : initial;
-                text-decoration-color: initial;
+            text-decoration-line: none;
+            text-decoration-thickness: initial;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
             border-bottom: 1px solid var(--article-link-border);
-                border-bottom-width: 1px;
-                border-bottom-style: solid;
-                border-bottom-color: initial;
-                color: var(--article-link-text);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: initial;
+            color: var(--article-link-text);
         }
 
         a:hover {
             /*text-decoration: underline;*/
             border-bottom: 1px solid var(--article-link-border);
-                border-bottom-width: 3px;
-                border-bottom-style: solid;
-                border-bottom-color: initial;
-                color: var(--article-link-text);
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            border-bottom-color: initial;
+            color: var(--article-link-text);
         }
 
-        h2, nav a {
+        h2,
+        nav a {
             font-family: 'VT323', monospace;
         }
 
@@ -80,11 +84,15 @@
          * Blinking cursor animation.
          */
         @keyframes blink {
-            from, to {
+
+            from,
+            to {
                 color: transparent;
             }
+
             50% {
-                color: #002b36; /* Black cursor */
+                color: #002b36;
+                /* Black cursor */
             }
         }
 
@@ -93,14 +101,17 @@
             scroll-margin-top: 2rem;
         }
     </style>
+    <script src="js/skill-widget.js" defer></script>
 </head>
 
 
 
 <body class="p-4 sm:p-6 md:p-8">
-    <div class="max-w-6xl mx-auto bg-[var(--base2)] rounded-xl shadow-lg shadow-[var(--blue)]/20 border border-[var(--blue)] p-6 sm:p-8">
+    <div
+        class="max-w-6xl mx-auto bg-[var(--base2)] rounded-xl shadow-lg shadow-[var(--blue)]/20 border border-[var(--blue)] p-6 sm:p-8">
         <nav class="border-b border-[var(--blue)] pb-4 mb-8">
-            <ul class="flex flex-col items-center space-y-4 sm:flex-row sm:justify-start sm:space-y-0 sm:space-x-8 list-none p-0 m-0 text-xl sm:text-2xl text-[var(--base03)]">
+            <ul
+                class="flex flex-col items-center space-y-4 sm:flex-row sm:justify-start sm:space-y-0 sm:space-x-8 list-none p-0 m-0 text-xl sm:text-2xl text-[var(--base03)]">
                 <li><a href="#whoami">/Who Am I</a></li>
                 <li><a href="#summary">/Professional Summary</a></li>
                 <li><a href="#experience">/Experience</a></li>
@@ -115,13 +126,13 @@
             snardi@computer:~$ Who Am I
         </h2>
         <script>
-        // Fetch the content from the text file
-        fetch('whoami.txt')
-            .then(response => response.text())
-            .then(data => {
-                // Insert the content into the paragraph element
-                document.getElementById('whoami-text').innerHTML = data;
-            });
+            // Fetch the content from the text file
+            fetch('whoami.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('whoami-text').innerHTML = data;
+                });
         </script>
         <p id="whoami-text"></p>
         <!-- Who Am I -->
@@ -133,13 +144,13 @@
             snardi@computer:~$ Professional Summary
         </h2>
         <script>
-        // Fetch the content from the text file
-        fetch('professional_summary.txt')
-            .then(response => response.text())
-            .then(data => {
-                // Insert the content into the paragraph element
-                document.getElementById('professional-summary-text').innerHTML = data;
-            });
+            // Fetch the content from the text file
+            fetch('professional_summary.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('professional-summary-text').innerHTML = data;
+                });
         </script>
         <p id="professional-summary-text"></p>
         <!-- Professional Summary End  -->
@@ -162,18 +173,19 @@
             </p>
             <!-- List of Responsibilities and Accomplishments -->
             <script>
-            // Fetch the content from the text file
-            fetch('experience_nursa.txt')
-                .then(response => response.text())
-                .then(data => {
-                    // Insert the content into the paragraph element
-                    document.getElementById('experience-nursa-text').innerHTML = data;
-                });
+                // Fetch the content from the text file
+                fetch('experience_nursa.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert the content into the paragraph element
+                        document.getElementById('experience-nursa-text').innerHTML = data;
+                    });
             </script>
             <p id="experience-nursa-text"></p>
         </div>
         <!-- Job Entry End: Nursa -->
-        <br><hr><br>
+        <br>
+        <hr><br>
         <!-- Job Entry Start: Netcracker -->
         <div class="job-entry">
             <!-- Header: Title, Company, and Dates -->
@@ -185,18 +197,19 @@
             </p>
             <!-- List of Responsibilities and Accomplishments -->
             <script>
-            // Fetch the content from the text file
-            fetch('experience_netcracker.txt')
-                .then(response => response.text())
-                .then(data => {
-                    // Insert the content into the paragraph element
-                    document.getElementById('experience-netcracker-text').innerHTML = data;
-                });
+                // Fetch the content from the text file
+                fetch('experience_netcracker.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert the content into the paragraph element
+                        document.getElementById('experience-netcracker-text').innerHTML = data;
+                    });
             </script>
             <p id="experience-netcracker-text"></p>
         </div>
         <!-- Job Entry End: Netcracker -->
-        <br><hr><br>
+        <br>
+        <hr><br>
         <!-- Job Entry Start: Amdocs -->
         <div class="job-entry">
             <!-- Header: Title, Company, and Dates -->
@@ -208,18 +221,19 @@
             </p>
             <!-- List of Responsibilities and Accomplishments -->
             <script>
-            // Fetch the content from the text file
-            fetch('experience_amdocs.txt')
-                .then(response => response.text())
-                .then(data => {
-                    // Insert the content into the paragraph element
-                    document.getElementById('experience-amdocs-text').innerHTML = data;
-                });
+                // Fetch the content from the text file
+                fetch('experience_amdocs.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert the content into the paragraph element
+                        document.getElementById('experience-amdocs-text').innerHTML = data;
+                    });
             </script>
             <p id="experience-amdocs-text"></p>
         </div>
         <!-- Job Entry End: Amdocs -->
-        <br><hr><br>
+        <br>
+        <hr><br>
         <!-- Job Entry Start: Orga Systems -->
         <div class="job-entry">
             <!-- Header: Title, Company, and Dates -->
@@ -231,18 +245,19 @@
             </p>
             <!-- List of Responsibilities and Accomplishments -->
             <script>
-            // Fetch the content from the text file
-            fetch('experience_orga.txt')
-                .then(response => response.text())
-                .then(data => {
-                    // Insert the content into the paragraph element
-                    document.getElementById('experience-orga-text').innerHTML = data;
-                });
+                // Fetch the content from the text file
+                fetch('experience_orga.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert the content into the paragraph element
+                        document.getElementById('experience-orga-text').innerHTML = data;
+                    });
             </script>
             <p id="experience-orga-text"></p>
         </div>
         <!-- Job Entry End: Orga Systems -->
-        <br><hr><br>
+        <br>
+        <hr><br>
         <!-- Job Entry Start: Sabre Holdings -->
         <div class="job-entry">
             <!-- Header: Title, Company, and Dates -->
@@ -254,18 +269,19 @@
             </p>
             <!-- List of Responsibilities and Accomplishments -->
             <script>
-            // Fetch the content from the text file
-            fetch('experience_sabre.txt')
-                .then(response => response.text())
-                .then(data => {
-                    // Insert the content into the paragraph element
-                    document.getElementById('experience-sabre-text').innerHTML = data;
-                });
+                // Fetch the content from the text file
+                fetch('experience_sabre.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert the content into the paragraph element
+                        document.getElementById('experience-sabre-text').innerHTML = data;
+                    });
             </script>
             <p id="experience-sabre-text"></p>
         </div>
         <!-- Job Entry End: Sabre Holdings -->
-        <br><hr><br>
+        <br>
+        <hr><br>
         <!-- Job Entry Start: First Data -->
         <div class="job-entry">
             <!-- Header: Title, Company, and Dates -->
@@ -277,36 +293,37 @@
             </p>
             <!-- List of Responsibilities and Accomplishments -->
             <script>
-            // Fetch the content from the text file
-            fetch('experience_firstdata.txt')
-                .then(response => response.text())
-                .then(data => {
-                    // Insert the content into the paragraph element
-                    document.getElementById('experience-firstdata-text').innerHTML = data;
-                });
+                // Fetch the content from the text file
+                fetch('experience_firstdata.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert the content into the paragraph element
+                        document.getElementById('experience-firstdata-text').innerHTML = data;
+                    });
             </script>
             <p id="experience-firstdata-text"></p>
         </div>
         <!-- Job Entry End: First Data -->
-        <br><hr><br>
+        <br>
+        <hr><br>
         <!-- Job Entry Start: Telecom Argentina -->
         <div class="job-entry">
             <!-- Header: Title, Company, and Dates -->
             <h3 class="text-lg sm:text-xl font-bold text-gray-800">
-            Senior Software Engineer & Business Analyst, BSS Systems
+                Senior Software Engineer & Business Analyst, BSS Systems
             </h3>
             <p class="text-md sm:text-lg font-medium text-gray-600 mb-4">
                 Telecom Argentina | Argentina August 1998 – September 2006
             </p>
             <!-- List of Responsibilities and Accomplishments -->
             <script>
-            // Fetch the content from the text file
-            fetch('experience_telecom.txt')
-                .then(response => response.text())
-                .then(data => {
-                    // Insert the content into the paragraph element
-                    document.getElementById('experience-telecom-text').innerHTML = data;
-                });
+                // Fetch the content from the text file
+                fetch('experience_telecom.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert the content into the paragraph element
+                        document.getElementById('experience-telecom-text').innerHTML = data;
+                    });
             </script>
             <p id="experience-telecom-text"></p>
         </div>
@@ -314,18 +331,37 @@
 
         <hr class="my-8 border-t border-[var(--blue)]">
 
-        <!-- Etc -->
-        <h2 id="etc" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
-            snardi@computer: etc $ 
+
+        <!-- Skills -->
+        <h2 id="skills" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
+            snardi@computer: skills $
         </h2>
         <script>
-        // Fetch the content from the text file
-        fetch('etc_index.txt')
-            .then(response => response.text())
-            .then(data => {
-                // Insert the content into the paragraph element
-                document.getElementById('etc-index-text').innerHTML = data;
-            });
+            // Fetch the content from the text file
+            fetch('skills.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('skills-text').innerHTML = data;
+                });
+        </script>
+        <div id="skills-text"></div>
+        <!-- Skills End -->
+
+        <hr class="my-8 border-t border-[var(--blue)]">
+
+        <!-- Etc -->
+        <h2 id="etc" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
+            snardi@computer: etc $
+        </h2>
+        <script>
+            // Fetch the content from the text file
+            fetch('etc_index.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('etc-index-text').innerHTML = data;
+                });
         </script>
         <p id="etc-index-text"></p>
         <!-- Etc End -->
@@ -337,13 +373,13 @@
             snardi@computer:~$ My Reading List
         </h2>
         <script>
-        // Fetch the content from the text file
-        fetch('reading_list.txt')
-            .then(response => response.text())
-            .then(data => {
-                // Insert the content into the paragraph element
-                document.getElementById('reading-list-text').innerHTML = data;
-            });
+            // Fetch the content from the text file
+            fetch('reading_list.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('reading-list-text').innerHTML = data;
+                });
         </script>
         <p id="reading-list-text"></p>
         <!-- My Reading List End -->
@@ -358,16 +394,17 @@
             Sergio Nardi Spinelli
         </h3>
         <br>
-            <ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
+        <ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
             <li>Site: <a href="https://snardi.github.io/" target="_blank">snardi.github.io</a></li>
             <li>Email: <a href="mailto:sergio.nardi@gmail.com">sergio.nardi@gmail.com</a></li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/nardix/" target="_blank">linkedin.com/in/nardix</a></li>
             <li>Location: <b>Vienna, Austria.</b></li>
-            </ul>
+        </ul>
         <!-- Contact End -->
 
 
     </div>
 
 </body>
+
 </html>
