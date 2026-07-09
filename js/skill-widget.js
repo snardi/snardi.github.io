@@ -32,7 +32,7 @@ class SkillWidget extends HTMLElement {
         const borderReset = link ? 'border-none no-underline hover:border-none' : '';
 
         this.innerHTML = `
-            <${tag} ${hrefAttr} class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-[var(--base2)] mx-1 align-middle text-sm font-sans shadow-sm shadow-[var(--blue)]/10 hover:bg-[var(--base3)] transition-colors ${cursorClass} whitespace-nowrap ${borderReset}" style="border-bottom: none !important;">
+            <${tag} ${hrefAttr} class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-[var(--base2)] mx-1 align-middle text-sm font-sans shadow-sm shadow-[var(--blue)]/10 hover:bg-[var(--base3)] transition-colors ${cursorClass} whitespace-normal sm:whitespace-nowrap ${borderReset}" style="border-bottom: none !important;">
                 <span class="font-semibold text-[var(--base03)]">${skill}</span>
                 <span class="tracking-tighter select-none" aria-label="${filledCount} out of 5 stars">
                     ${starDisplay}
