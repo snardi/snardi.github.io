@@ -29,6 +29,10 @@
             --green: #859900;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--base3);
@@ -100,13 +104,37 @@
         h2[id] {
             scroll-margin-top: 2rem;
         }
+
+        .floating-top-btn {
+            font-family: 'VT323', monospace;
+            background-color: var(--base2) !important;
+            color: var(--blue) !important;
+            border: 1px solid var(--blue) !important;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(38, 139, 210, 0.2), 0 2px 4px -1px rgba(38, 139, 210, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none !important;
+            border-bottom: 1px solid var(--blue) !important;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .floating-top-btn:hover {
+            background-color: var(--blue) !important;
+            color: var(--base2) !important;
+            border-bottom: 1px solid var(--blue) !important;
+            box-shadow: 0 10px 15px -3px rgba(38, 139, 210, 0.4), 0 4px 6px -2px rgba(38, 139, 210, 0.2);
+            transform: translateY(-2px);
+        }
     </style>
     <script src="js/skill-widget.js" defer></script>
 </head>
 
 
 
-<body class="p-4 sm:p-6 md:p-8">
+<body id="top" class="p-4 sm:p-6 md:p-8">
     <div
         class="max-w-6xl mx-auto bg-[var(--base2)] rounded-xl shadow-lg shadow-[var(--blue)]/20 border border-[var(--blue)] p-6 sm:p-8">
         <nav class="border-b border-[var(--blue)] pb-4 mb-8">
@@ -405,6 +433,26 @@
 
     </div>
 
+    <!-- Floating Back to Top Button -->
+    <div id="floating-menu" class="fixed bottom-6 right-6 z-50 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
+        <a href="#top" class="floating-top-btn text-xl sm:text-2xl">
+            /Top &uarr;
+        </a>
+    </div>
+
+    <script>
+        // Show/hide floating menu based on scroll position
+        window.addEventListener('scroll', () => {
+            const menu = document.getElementById('floating-menu');
+            if (window.scrollY > 300) {
+                menu.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                menu.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                menu.classList.remove('opacity-100', 'translate-y-0');
+                menu.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+            }
+        });
+    </script>
 </body>
 
 </html>
