@@ -110,7 +110,7 @@
             background-color: var(--base2) !important;
             color: var(--blue) !important;
             border: 1px solid var(--blue) !important;
-            padding: 0.5rem 1rem;
+            padding: 0.75rem 1.25rem;
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px -1px rgba(38, 139, 210, 0.2), 0 2px 4px -1px rgba(38, 139, 210, 0.1);
             transition: all 0.3s ease;
@@ -134,7 +134,8 @@
 
 
 
-<body id="top" class="p-4 sm:p-6 md:p-8">
+<body id="top" class="relative p-4 sm:p-6 md:p-8">
+    <div id="scroll-sentinel" class="absolute top-[300px] left-0 w-1 h-1 pointer-events-none"></div>
     <div
         class="max-w-6xl mx-auto bg-[var(--base2)] rounded-xl shadow-lg shadow-[var(--blue)]/20 border border-[var(--blue)] p-6 sm:p-8">
         <nav class="border-b border-[var(--blue)] pb-4 mb-8">
@@ -441,17 +442,37 @@
     </div>
 
     <script>
-        // Show/hide floating menu based on scroll position
-        window.addEventListener('scroll', () => {
-            const menu = document.getElementById('floating-menu');
-            if (window.scrollY > 300) {
-                menu.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
-                menu.classList.add('opacity-100', 'translate-y-0');
-            } else {
-                menu.classList.remove('opacity-100', 'translate-y-0');
-                menu.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-            }
-        });
+        // Use IntersectionObserver for bulletproof scroll position detection on mobile
+        const sentinel = document.getElementById('scroll-sentinel');
+        const menu = document.getElementById('floating-menu');
+        const btn = document.querySelector('.floating-top-btn');
+
+        if (sentinel && menu && btn) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        menu.classList.remove('opacity-100', 'translate-y-0');
+                        menu.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                    } else {
+                        menu.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                        menu.classList.add('opacity-100', 'translate-y-0');
+                    }
+                });
+            }, { root: null });
+
+            observer.observe(sentinel);
+
+            // Intercept click to perform a highly reliable smooth scroll programmatic animation
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                // Update history hash state without layout jumping
+                history.pushState(null, null, '#top');
+            });
+        }
     </script>
 </body>
 
