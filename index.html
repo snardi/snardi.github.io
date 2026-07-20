@@ -147,9 +147,9 @@
                 <li><a href="#summary">/Professional Summary</a></li>
                 <li><a href="#experience">/Experience</a></li>
                 <li><a href="#skills">/Skills</a></li>
+                <li><a href="#education">/Education &amp; Courses</a></li>
                 <li><a href="#etc">/etc</a></li>
-                <li><a href="#readingList">/My Reading List</a></li>
-                <li><a href="#contact">/Contact</a></li>
+                <li><a href="#readingList">/Reading List</a></li>
             </ul>
         </nav>
         <!-- Who Am I -->
@@ -362,7 +362,6 @@
 
         <hr class="my-8 border-t border-[var(--blue)]">
 
-
         <!-- Skills -->
         <h2 id="skills" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
             snardi@computer: skills $
@@ -378,6 +377,24 @@
         </script>
         <div id="skills-text"></div>
         <!-- Skills End -->
+
+        <hr class="my-8 border-t border-[var(--blue)]">
+
+        <!-- Education and Courses -->
+        <h2 id="education" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
+            snardi@computer: education & courses $
+        </h2>
+        <script>
+            // Fetch the content from the text file
+            fetch('education.txt')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the content into the paragraph element
+                    document.getElementById('education-text').innerHTML = data;
+                });
+        </script>
+        <div id="education-text"></div>
+        <!-- Education and Courses End -->
 
         <hr class="my-8 border-t border-[var(--blue)]">
 
@@ -437,7 +454,8 @@
     </div>
 
     <!-- Floating Back to Top Button -->
-    <div id="floating-menu" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
+    <div id="floating-menu"
+        class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
         <a href="#top" class="floating-top-btn text-xl sm:text-2xl">
             /Top &uarr;
         </a>
