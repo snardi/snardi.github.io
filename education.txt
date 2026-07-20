@@ -1,16 +1,23 @@
 <ul class="list-disc list-outside space-y-3 text-gray-700 pl-5">
     <li class="text-gray-800">
         <a href="edu/2026-06-04.pdf" target="_blank">
-            <b><i>Harnessing the Disruption of Generative AI</i></b>.
+            <b><i>Harnessing the Disruption of Generative AI.</i></b>
             Issue by <b>Association of Computing Machinery (ACM)</b>.
             Completion date: 2026, June 4.
         </a>
     </li>
     <li class="text-gray-800">
         <a href="edu/2026-06-02.pdf" target="_blank">
-            <b><i>Generative AI and Its Impact to Everyday Business</i></b>.
+            <b><i>Generative AI and Its Impact to Everyday Business.</i></b>
             Issue by <b>Association of Computing Machinery (ACM)</b>.
             Completion date: 2026, June 2.
+        </a>
+    </li>
+    <li class="text-gray-800">
+        <a href="edu/2025-12-17.pdf" target="_blank">
+            <b><i>How to Elicit, Write and Analyze Requirements in the AI Era.</i></b>
+            Issue by <b>Udemy</b>.
+            Completion date: 2025, December 17.
         </a>
     </li>
 </ul> 
