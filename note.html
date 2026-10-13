@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Sergio Nardi Spinelli</title>
+
+    <style>
+        :root {
+            --base03: #002b36;
+            --base02: #073642;
+            --base01: #586e75;
+            --base00: #657b83;
+            --base0: #839496;
+            --base1: #93a1a1;
+            --base2: #eee8d5;
+            --base3: #fdf6e3;
+            --yellow: #b58900;
+            --orange: #cb4b16;
+            --red: #dc322f;
+            --magenta: #d33682;
+            --violet: #6c71c4;
+            --blue: #268bd2;
+            --cyan: #2aa198;
+            --green: #859900;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--base3);
+            color: var(--base00);
+            overflow-x: hidden;
+        }
+
+        /* Style for links, if any are loaded from the text files */
+        /*
+        a {
+            color: var(--blue);
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: var(--base1);
+        }
+        */
+
+        a {
+            text-decoration: none;
+            text-decoration-line: none;
+            text-decoration-thickness: initial;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+            border-bottom: 1px solid var(--article-link-border);
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: initial;
+            color: var(--article-link-text);
+        }
+
+        a:hover {
+            /*text-decoration: underline;*/
+            border-bottom: 1px solid var(--article-link-border);
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            border-bottom-color: initial;
+            color: var(--article-link-text);
+        }
+
+        h2,
+        nav a {
+            font-family: 'VT323', monospace;
+        }
+
+        /*
+         * Styles for the "command line prompt."
+         */
+        .prompt::after {
+            content: '_';
+            animation: blink 1s step-end infinite;
+        }
+
+        /*
+         * Blinking cursor animation.
+         */
+        @keyframes blink {
+
+            from,
+            to {
+                color: transparent;
+            }
+
+            50% {
+                color: #002b36;
+                /* Black cursor */
+            }
+        }
+
+
+        h2[id] {
+            scroll-margin-top: 2rem;
+        }
+
+        .floating-top-btn {
+            font-family: 'VT323', monospace;
+            background-color: var(--base2) !important;
+            color: var(--blue) !important;
+            border: 1px solid var(--blue) !important;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(38, 139, 210, 0.2), 0 2px 4px -1px rgba(38, 139, 210, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none !important;
+            border-bottom: 1px solid var(--blue) !important;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .floating-top-btn:hover {
+            background-color: var(--blue) !important;
+            color: var(--base2) !important;
+            border-bottom: 1px solid var(--blue) !important;
+            box-shadow: 0 10px 15px -3px rgba(38, 139, 210, 0.4), 0 4px 6px -2px rgba(38, 139, 210, 0.2);
+            transform: translateY(-2px);
+        }
+    </style>
+    <script>
+        function resizeIframe(iframe) {
+            if (!iframe) return;
+            try {
+                const doc = iframe.contentDocument || iframe.contentWindow?.document;
+                if (!doc) return;
+
+                // Disable scrollbars inside the iframe document
+                doc.documentElement.style.overflow = 'hidden';
+                doc.body.style.overflow = 'hidden';
+
+                const adjustHeight = () => {
+                    // Temporarily collapse height to auto to recalculate exact content height
+                    iframe.style.height = 'auto';
+                    const newHeight = Math.max(
+                        doc.body ? doc.body.scrollHeight : 0,
+                        doc.documentElement ? doc.documentElement.scrollHeight : 0,
+                        doc.body ? doc.body.offsetHeight : 0
+                    );
+                    if (newHeight > 0) {
+                        iframe.style.height = (newHeight + 4) + 'px';
+                    }
+                };
+
+                adjustHeight();
+
+                if (window.ResizeObserver && doc.body) {
+                    const observer = new ResizeObserver(() => adjustHeight());
+                    observer.observe(doc.body);
+                }
+
+                window.addEventListener('resize', adjustHeight);
+            } catch (err) {
+                console.warn('Could not auto-resize iframe:', err);
+            }
+        }
+    </script>
+    <script src="js/skill-widget.js" defer></script>
+</head>
+
+
+
+<body id="top" class="relative p-4 sm:p-6 md:p-8">
+    <div id="scroll-sentinel" class="absolute top-[300px] left-0 w-1 h-1 pointer-events-none"></div>
+    <div
+        class="max-w-6xl mx-auto bg-[var(--base2)] rounded-xl shadow-lg shadow-[var(--blue)]/20 border border-[var(--blue)] p-6 sm:p-8">
+        <nav class="border-b border-[var(--blue)] pb-4 mb-8">
+            <ul
+                class="flex flex-col items-center space-y-4 sm:flex-row sm:justify-start sm:space-y-0 sm:space-x-8 list-none p-0 m-0 text-xl sm:text-2xl text-[var(--base03)]">
+                <li><a href="/#whoami">/Who Am I</a></li>
+                <li><a href="/#summary">/Professional Summary</a></li>
+                <li><a href="/#experience">/Experience</a></li>
+                <li><a href="/#skills">/Skills</a></li>
+                <li><a href="/#education">/Education &amp; Courses</a></li>
+                <li><a href="/#myNotes">/My Notes</a></li>
+                <li><a href="/#readingList">/Reading List</a></li>
+            </ul>
+        </nav>
+        <!-- Who Am I -->
+        <h2 id="whoami" class="text-2xl prompt sm:text-3xl font-bold text-[var(--base03)] mb-6">
+            snardi@computer:~$ My Notes
+        </h2>
+
+        <iframe id="note-frame" title="Formatted Content" scrolling="no"
+            style="border: none; width: 100%; height: auto; min-height: 200px; display: block; overflow: hidden;"
+            onload="resizeIframe(this)"></iframe>
+
+        <script>
+            (function () {
+                const urlParams = new URLSearchParams(window.location.search);
+                const noteParam = urlParams.get('note') || urlParams.get('file') || urlParams.get('filename') || 'Comparative reference framework for specification techniques.html';
+                const frame = document.getElementById('note-frame');
+                if (frame && noteParam) {
+                    const noteSrc = noteParam.includes('/') ? noteParam : 'public_notes/' + noteParam;
+                    frame.src = noteSrc;
+                }
+            })();
+        </script>
+
+        <hr class="my-8 border-t border-[var(--blue)]">
+    </div>
+
+
+
+    <!-- Floating Back to Top Button -->
+    <div id="floating-menu"
+        class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
+        <a href="#top" class="floating-top-btn text-xl sm:text-2xl">
+            /Top &uarr;
+        </a>
+    </div>
+
+    <script>
+        // Use IntersectionObserver for bulletproof scroll position detection on mobile
+        const sentinel = document.getElementById('scroll-sentinel');
+        const menu = document.getElementById('floating-menu');
+        const btn = document.querySelector('.floating-top-btn');
+
+        if (sentinel && menu && btn) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        menu.classList.remove('opacity-100', 'translate-y-0');
+                        menu.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                    } else {
+                        menu.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                        menu.classList.add('opacity-100', 'translate-y-0');
+                    }
+                });
+            }, { root: null });
+
+            observer.observe(sentinel);
+
+            // Intercept click to perform a highly reliable smooth scroll programmatic animation
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                // Update history hash state without layout jumping
+                history.pushState(null, null, '#top');
+            });
+        }
+
+        // Auto-resize iframe if already loaded or on load event
+        const frame = document.getElementById('note-frame');
+        if (frame) {
+            frame.addEventListener('load', () => resizeIframe(frame));
+            if (frame.contentDocument && frame.contentDocument.readyState === 'complete') {
+                resizeIframe(frame);
+            }
+        }
+    </script>
+</body>
+
+</html>

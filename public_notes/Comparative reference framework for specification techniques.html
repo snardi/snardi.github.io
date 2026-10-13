@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Comparative reference framework for specification techniques</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Comparative reference framework for specification
+techniques</h1>
+</header>
+<p>This page belongs to <a target="_parent"
+href="/note.html?note=My%20Notes%20on%20Requirement%20Engineering.html">My Notes on
+Requirement Engineering</a>.</p>
+<p>Edited on: 2026-10-12</p>
+<p>Drafted with the assistance of generative AI and reviewed/edited by
+Sergio Nardi Spinelli.</p>
+<h2 id="intro">Intro</h2>
+<p>No single specification technique is universally optimal across all
+project typologies.</p>
+<p>A comparative reference framework is therefore required to support
+the objective evaluation of specification techniques, helping to decide
+which one to use in a particular project.</p>
+<p>This proposed comparative reference framework for specification
+techniques considers seven fundamental aspects, with the goal of being
+an initial reference point when discussing and evaluating different
+specification techniques.</p>
+<p>In the field, other evaluation and quality frameworks exist, such as
+the SEQUAL Framework.</p>
+<p>The next section describes the seven aspects of this framework:
+Aspect 1: Epistemic Clarity, Ambiguity Reduction, and Verifiability
+Aspect 2: Syntactic Rigor versus Stakeholder Comprehensibility Aspect 3:
+Expressiveness, Concurrency, and Systemic Modeling Aspect 4: Regulatory
+Compliance and Safety-Critical Mandates Aspect 5: Traceability, ALM
+Integration, and OSLC Interoperability Aspect 6: Economic Viability,
+Adoption Friction, and Agile Resilience Aspect 7: Synergies with
+Artificial Intelligence and Automated Evaluation</p>
+<h2 id="aspects-to-compare-specification-techniques">7 Aspects to
+compare specification techniques</h2>
+<h3
+id="aspect-1-epistemic-clarity-ambiguity-reduction-and-verifiability">Aspect
+1: Epistemic Clarity, Ambiguity Reduction, and Verifiability</h3>
+<p>The foundational aspect for evaluating a specification technique is
+its capacity to enforce epistemic clarity: knowing precisely what is
+actually known, how it is known and where the knowledge ends. It
+requires a clear distinction between facts and inference, structured
+justification tracking and calibrated confidence levels.</p>
+<p>In other words, it refers to how effectively the technique captures a
+requirement such that it yields one, and only one, valid
+interpretation.</p>
+<p>This aspect assesses how effectively a technique prevents linguistic
+ambiguity, enforces completeness, and facilitates objective
+verification.</p>
+<h3
+id="aspect-2-syntactic-rigor-versus-stakeholder-comprehensibility">Aspect
+2: Syntactic Rigor versus Stakeholder Comprehensibility</h3>
+<p>This second comparative aspect addresses the human communicative
+realities of requirements elicitation, commonly referred to as the
+“vocabulary gap”.</p>
+<p>The aspect evaluates the cognitive load required to read, interpret,
+understand, validate, and negotiate the specification, weighing the
+specification technique’s level of syntactic rigor against its
+accessibility to its intended stakeholders.</p>
+<p>Generally, there is an inverse relationship between mathematical
+rigor and human comprehensibility.</p>
+<p>A specification technique is functionally useless if the target
+audience (e.g. domain experts, business sponsors, legal departments,
+regulatory authorities) who must validate the requirements cannot
+comprehend them.</p>
+<h3
+id="aspect-3-expressiveness-concurrency-and-systemic-modeling">Aspect 3:
+Expressiveness, Concurrency, and Systemic Modeling</h3>
+<p>This aspect acknowledges that not all software systems require the
+same type of information to be specified.</p>
+<p>For instance, a web-based e-commerce platform relies primarily on
+user journey flows, whereas a real-time control system is based on
+microsecond timing constraints, hardware interrupts, and continuous
+state monitoring.</p>
+<p>This third aspect then measures a specification technique’s semantic
+richness: its capacity to accurately express requirements including, for
+instance, complex conditional logic, concurrent operations scenarios,
+timing constraints, non-functional requirements and system
+architectures.</p>
+<h3
+id="aspect-4-regulatory-compliance-and-safety-critical-mandates">Aspect
+4: Regulatory Compliance and Safety-Critical Mandates</h3>
+<p>In numerous industries, the selection of a requirements specification
+technique is not a free choice but is heavily constrained by external
+regulations.</p>
+<p>This aspect measures a technique’s ability to satisfy external
+regulatory audit, compliance, and safety mapping requirements.</p>
+<h3
+id="aspect-5-traceability-alm-integration-and-oslc-interoperability">Aspect
+5: Traceability, ALM Integration, and OSLC Interoperability</h3>
+<p>Software requirements, in general, exist in the context of a software
+development lifecycle. They undergo continuous evolution through
+incremental or recursive refinement and validation steps.</p>
+<p>This aspect evaluates how effectively a specification technique
+scales across different sizes and shapes of project teams, its
+integration into Application Lifecycle Management tools, and its support
+for bidirectional traceability through the different types of
+requirements.</p>
+<h3
+id="aspect-6-economic-viability-adoption-friction-and-agile-resilience">Aspect
+6: Economic Viability, Adoption Friction, and Agile Resilience</h3>
+<p>The theoretical and mathematical superiority of a specification
+technique is ultimately irrelevant if its implementation is economically
+prohibitive or culturally incompatible with the engineering
+organization.</p>
+<p>This aspect examines the Return on Investment (ROI) of a given
+specification technique, its costs, training requirements, and the
+friction associated with integrating the technique into an existing
+organizational culture.</p>
+<p>It also assesses the technique’s resilience to rapid, volatile
+changes in scope.</p>
+<h3
+id="aspect-7-synergies-with-artificial-intelligence-and-automated-evaluation">Aspect
+7: Synergies with Artificial Intelligence and Automated Evaluation</h3>
+<p>This aspect measures a specification technique’s compatibility with
+automated AI analysis, synthetic generation, and heuristic validation
+tools.</p>
+<p>The intersection of GenAI and LLMs, and Requirements Engineering
+represents a critical and highly disruptive evaluation frontier.</p>
+</body>
+</html>
